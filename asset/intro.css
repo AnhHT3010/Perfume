@@ -1,0 +1,183 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #DDDDDD;
+
+}
+body{
+    background: #1A1C21;
+
+}
+#main {
+    background: radial-gradient(#37393d 0%, rgba(17, 17, 17, 0) 57.97%);
+    width: 1868px;
+    height: 1893px;
+    transform: translateX(-340px) translateY(-889px);
+    z-index: -1;
+    position: fixed;
+    z-index: -1;
+}
+
+
+/* COMMON */
+.mt-48{
+    margin-top: 48px !important;
+}
+
+#content{
+    margin: auto;
+    width: 1800px;
+}
+
+#content .container{
+    width: 100%;
+    max-width: 100%;
+    padding: 0 16px;
+}
+#header{
+    width: 1800px;
+    height: 46px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    margin: auto;
+    /* overflow: hidden; */
+}
+
+ul#nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+ul#nav > li{
+    display: inline-block;
+    line-height: 46px;
+    width: 120px;
+    height: 46px;
+    font-size: 18px;
+    text-transform: uppercase;
+    list-style-type: none;
+    margin: 0px 10px;
+    font-weight: 300;    
+    transition: 0.4s;
+}
+ul#nav > li:hover{
+    scale: 1.1;
+}
+ul#nav > li a{
+    text-decoration: none;
+}
+
+.logo{
+    position: absolute;
+}
+
+#introduce{
+    display: flex;
+    width: 100%;
+    height: 710px;
+    margin-top: 250px;
+    float: left;
+}
+
+#introduce #slogan{
+    margin: auto;
+    width: 53%;
+    margin: 0px 20%;
+}
+
+#introduce #slogan .name-slogan{
+    padding: 40px 0;
+}
+
+#introduce #slogan b{
+    display: block;
+    font-weight: 900;
+    font-size: 10rem;
+}
+#introduce #slogan .slogan-2{
+    margin-left: 10%;
+}
+#introduce #slogan .text-2{
+    margin-left: 56%;
+}
+
+#introduce #slogan p{
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 18px;
+    color: #fff;
+}
+
+#introduce #contact-social{
+    display: flex;
+    align-items: end;
+}
+
+#introduce #contact-social .icon-social{
+    list-style-type: none;
+}
+#introduce .icon-social li{
+    display: block;
+    margin: 22px 0;
+    transition: 0.5s;
+}
+#introduce .icon-social li:hover{
+    scale: 1.2;
+}
+#introduce .icon-social li:hover{
+    margin: 27px 0 27px;
+}
+
+
+#introduce #scrooling .box-scrooling{
+    position: initial;
+    background-color: #1A1C21;
+    width: 75%;
+}
+
+.rotate {
+    position: relative;
+    width: 200px;
+    font-size: 18px;
+    transform:  translateX(-139%) translateY(35%) rotate(90deg);
+}
+
+#introduce hr{
+    left: 0px;
+    top: 6px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    border: none;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+
+/* RESPONSIVE */
+/*Ipad ngang(1024 x 768)*/
+@media screen and (max-width: 1924px){
+    body{
+        width: 1924px;
+    }
+}
+@media (max-width: 740px){
+    #header{
+        width: 1300px;
+    }
+    .rotate {
+        transform:  translateX(-120%) translateY(35%) rotate(90deg);
+    }
+}
+@media (max-width: 390px){
+    #introduce {
+        width: 60%;
+    }
+}
